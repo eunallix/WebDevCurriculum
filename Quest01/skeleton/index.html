@@ -1,197 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang ='ko'>
 
 	<head>
 		<meta charset="UTF-8">
 		<meta name ="description" content="네이버 메인 화면">
-		<meta name = "keywords" content="네이버,메인,검색,모바일">
+		<title>네이버</title>
 		<meta http-equiv = "refresh" content="30">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel  ="stylesheet"  href="/Users/eun/Documents/workspace/bootcamp/TEAMLAB/WebDevCurriculum/Quest02/naver.css">
+		<link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
+
+
 
 	</head>
 	<body>
 		<header>
-
 			<buttton type ="button"><img src="" alt=""></img></buttton>
-			<div>
-				<a href="">QR체크인</a> |
-				<a href="">NPAY</a> |
-				<button type="button"><<img src="" alt=""></img></button>
+			<div class="header">
+				<a id="QR" href="">QR체크인</a> |
+				<a id="NPAY" href="">NPAY</a> |
+				<img id="box" src="" alt="box"></img>
 			</div>
 
-			</header>
+        </header>
+			
 
 		<section class="main">
-			<h1>NAVER</h1>
+		    <div class="section_center" >
+                <h1 id='logo'>NAVER</h1>
+                
+                <form class="search" action="">
+                    <input class="search_box" type="text"name="search" value="검색어를 입력해주세요."/>
+                    
+                    <button id="button_voice">음성</button>
+                    <button id="button_picture">사진</button>
+                    <button id="button_locatoin">위치</button>
+                    
+                   
+               </form>
+                
 
-			<div>
-				<p><input name="search" value="검색어를 입력해주세요."></p>
-				<button>검색</button>
-			</div>
+                <nav class="bar" >
+                    <ul class="list">
+                        <li>
+                            <a href="">
+                                <img src="" alt="뉴스" title="뉴스판"></img>
+                                <div>뉴스판</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="" alt="경제지표" title="경제지표판"></img>
+                                <div>경제지표</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="" alt="연예" title="연예판"></img>
+                                <div>연예판</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="" alt="트렌드" title="트렌드판"></img>
+                                <div>트렌드</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="" alt="메일" title="메일"></img>
+                                <div>메일</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="" alt="카페" title="카페"></img>
+                                <div>카페</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="" alt="블로그" title="블로그"></img>
+                                <div>블로그</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="" alt="더보기" title="더보기"></img>
+                                <div></div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
-			<nav>
-				<ul>
-					<li>
-						<a href="">
-							<img src="" alt="news" title="뉴스판"></img>
-							<div>뉴스판</div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="" alt="economic" title="경제지표판"></img>
-							<div>경제지표</div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="" alt="entertainment" title="연예판"></img>
-							<div>연예판</div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="" alt="trend" title="트렌드판"></img>
-							<div>트렌드</div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="" alt="mail" title="메일"></img>
-							<div>메일</div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="" alt="cafe" title="카페"></img>
-							<div>카페</div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="" alt="blog" title="블로그"></img>
-							<div>블로그</div>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<img src="" alt="more" title="더보기"></img>
-							<div></div>
-						</a>
-					</li>
-				</ul>
-			</nav>
+                <div class="weather">
+                    <span>
+                        <img src="" alt="날씨"></img>
+                    </span>
+                    <span>
+                        <strong id=now_weather>10° 맑음</strong>
+                        <div id=now_weather_>어제보다 2° 높아요</div>
+                    </span>
+                    <span>
+                        <img src="" alt=""></img>
+                        <img src="" alt=""></img>
+                        <img src="" alt=""></img>
+                    </span>
+                </div>
 
-			<div>
-				<span>
-					<img src="" alt=""></img>
-				</span>
-				<span>
-					<strong>10° 맑음</strong><br>
-					<div>어제보다 2° 높아요</div>
-				</span>
-				<span>
-					<img src="" alt=""></img>
-					<img src="" alt=""></img>
-					<img src="" alt=""></img>
-				</span>
-			</div>
+                <div class="weather_forecast">
+                    <div class="weather_forecast_1">
+                        <strong>날씨</strong>
+                        <span #loation>서울시 잠실동</span>
+                        <img src="" alt="현재위치"></img>
+                        <button><img src="" alt=""></img></button>
+                    </div>
 
-			<div>
-				<div>
-					<strong>날씨</strong>
-					<span>서울시 잠실동</span>
-					<span><img src="" alt="현재위치"></img></span>
-					<span><button><img src="" alt=""></img></button></span>
-				</div>
+                    <div class="weather_forecast_2">
+                        <span>시간대별 날씨</span>
+                        <span>시간대별 미세먼지</span>
+                        <span>주간 날씨</span>
+                        <span>주간 미세먼지</span>
+                    </div>
+                    <div>
+                        <img src="" alt=""></img>
+                    </div>
+                </div>
 
-				<div>
-					<span>시간대별 날씨</span>
-					<span>시간대별 미세먼지</span>
-					<span>주간 날씨</span>
-					<span>주간 미세먼지</span>
-				</div>
-				<div>
-					<img src="" alt=""></img>
-				</div>
+                    <div class="covid">
+                        <span class="covid_status">
+                            <strong><img src="" alt=""></img>코로나19</strong>
+                            <div>국내외 확진 현황</div>
+                        </span>
+                        <span class="covid_issue">
+                            <strong><img src="" alt="O/X_img">코로나19 팩트체크</strong>
+                            <div>백신 정보 팩트는?</div>
+                        </span>
+                    </div>
 
-				<div>
-					<span>
-						<strong><img src="" alt=""></img>코로나19</strong>
-						<div>국내외 확진 현황</div>
-					</span>
-					<span>
-						<strong><img src="" alt="O/X_img">코로나19 팩트체크</strong>
-						<div>백신 정보 팩트는?</div>
-					</span>
-				</div>
+                    <div class ="today_alert">
+                        <span><img src="" alt=""></img></span>
+                        <span>제102주년 대한민국 임시정부 수립일</span>
+                    </div>
 
-				<div>
-					<span><img src="" alt=""></img></span>
-					<span>제102주년 대한민국 임시정부 수립일</span>
-				</div>
+                    <div class="naver_app">
+                        <span><img src="" alt=""></img></span>
+                        <span>앱으로 </span>
+                        <strong>새로운 네이버</strong>
+                        <span>를 더 쾌적하게 사용해 보세요.</span>
+                        <span><button>앱사용하기</button>
+                    </div>
 
-				<div>
-					<span><img src="" alt=""></img></span>
-					<span>앱으로 </span>
-					<strong>새로운 네이버</strong>
-					<span>를 더 쾌적하게 사용해 보세요.</span>
-					<span><button>앱 사용하기</button>
-				</div>
+                    <div class="webtoon">
+                        <strong>웹툰</strong>
+                        <button><img src="" alt=""></img></button>
+                    </div>
 
-				<div>
-					<span>웹툰</span>
-					<span><button><img src="" alt=""></img></button></span>
-				</div>
+                    <div class="hot_topic">
+                        <div>
+                            <strong>인기 주제 판을 확인해 보세요!</strong>
+                            <span class="control">판관리</span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="" alt="영화판" title="영화판"></img>
+                                        <span>영화판</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="" alt="뿜판" title="뿜판"></img>
+                                        <span>뿜판</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="" alt="웹툰판" title="웹툰판"></img>
+                                        <span>웹툰판</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="" alt="경제M판" title="경제M판"></img>
+                                        <span>경제M판</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-				<div>
-					<div>
-						<strong>인기 주제 판을 확인해 보세요!</strong>
-						<span>판관리</span>
-					</div>
-					<div>
-						<ul>
-							<li>
-								<a href="">
-									<img src="" alt="영화판" title="영화판"></img>
-									<span>영화판</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<img src="" alt="뿜판" title="뿜판"></img>
-									<span>뿜판</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<img src="" alt="웹툰판" title="웹툰판"></img>
-									<span>웹툰판</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<img src="" alt="경제M판" title="경제M판"></img>
-									<span>경제M판</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-
-					<div>
-						<span>알립니다</span>
-						<span>네이버앱 업데이트 사전 안내</span>
-						<span><button><img src="" alt="이동"></img></button></span>
-					</div>
+                    <div class="update">
+                        <span id=notice>알립니다</span>
+                        <span>네이버앱 업데이트 사전 안내</span>
+                        <span><button><img src="" alt="이동"></img></button></span>
+                    </div>
 
 
 
 
-				</div>
+                    
 
-			</div>
+                
 
-
+            </div>
 
 
 
@@ -200,7 +213,8 @@
 			<!-- TODO: main은 어떤 식으로 나눌 수 있을까요? -->
 		</section>
 
-		<footer>
+		<footer class="footer_center">
+		
 			<div>
 				<a href="">로그인</a> |
 				<a href="">전체서비스</a> |
